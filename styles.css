@@ -1,0 +1,57 @@
+/* Estilos para el menú */
+nav {
+    position: relative;
+}
+
+#menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 1100;
+}
+
+nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: #0044cc;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul li {
+    display: block;
+    text-align: center;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 10px;
+    color: white;
+    text-decoration: none;
+}
+
+#menu.show {
+    display: flex;
+}
+
+/* Estilos para móviles */
+@media (max-width: 768px) {
+    #menu-toggle {
+        display: inline-block;
+    }
+    nav ul {
+        flex-direction: column;
+        right: 20px;
+        top: 40px;
+    }
+}
